@@ -1,0 +1,43 @@
+#details{
+    height:300px
+}
+.both{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#details p{
+    padding: 12px 12px;
+    font-size: 20px;
+}
+.box{
+    height: 100px;
+    width: 300px;
+}
+section h1{
+    text-align: center;
+    font-size: 35px;
+}
+nav ul li a{
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+div img {
+    padding: 0px;
+    height: 70px;
+    width: 66px;
+}
+
+#navbar{
+    height: 70px;
+}
+.both #slider{
+    width: 100%;
+}
+
+.flip-card-back img{
+    height: 100%;
+    width: 100%;
+}

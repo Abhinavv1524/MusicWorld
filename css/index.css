@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    /* padding: 12px; */
+    /* border: 2px solid red; */
+    background-color: black;
+    color: white;
+    /* opacity: 0.5+
+    \
+    
+    
+    ; */
+    height: 120px;
+    z-index: -1;
+}
+
+div img {
+    padding: 0px;
+    height: 120px;
+    z-index: 0;
+}
+
+nav ul {
+    padding: 20px;
+    display: flex;
+    float: right;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    color: black;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.both {
+    background-color: rgb(222, 220, 255);
+    display: flex;
+}
+
+.both #slider {
+    width: 58%;
+}
+
+#theme {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 2px solid red;
+    width: 400px;
+    margin: 12px;
+    border-radius: 40px;
+}
+
+.box p {
+    padding: 12px;
+    color: black;
+    text-align: justify;
+}
+
+.both #theme {
+    margin-left: 12px;
+    width: 40%;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: black;
+    background: url(/img/bg3.avif) center center no-repeat;
+    height: 400px;
+    /* opacity: 0.9; */
+    z-index: -1;
+}
+
+section {
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#details p {
+    padding: 12px 200px;
+}
+
+section h1 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+/* #slider{
+    background-color: rgb(222, 220, 255);
+} */
+
+/* #details h1{
+     opacity: 0.6; 
+} */
+
+#details p {
+    color: rgb(255, 253, 152);
+    /* opacity: 0.5; */
+    font-weight: 400;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+footer {
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    height: 40px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 304px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid green;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background:linear-gradient(120deg, #1db954, #191414);
+}
+
+.flip-card-back {
+    background:linear-gradient(120deg, #1db954, #191414);
+    transform: rotateY(180deg);
+}
+.flip-card-back img{
+    height: 100%;
+}
